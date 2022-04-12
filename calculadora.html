@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+
+<body>
+    <header class="cabecalho" id="cabecalho">
+        <div>
+            <img class="img" src="./imagens/logo.jfif">
+        </div>
+    </header>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="conversoes.html">Conversões</a></li>
+                <li><a href="calculadora.html">Calculadora</a></li>
+            </ul>
+        </nav>
+        
+    <main>
+
+        <div class="tamanho_fonte">
+            <button onclick="diminuir()"> A-</button>
+            <button onclick="aumentar()"> A+ </button>
+        </div>
+
+
+        <div class="titulocalc">
+            
+            <h1>Calc Tudo</h1>
+            <h2>Calculadora</h2>
+
+            <div class="calc">
+
+            <!--Parte 1 - Resultado da operação -->
+            <input class="tipo" type="text" id="resultado"
+            placeholder="Resultado..."/>
+
+            <!-- Parte 2 -->
+            <input class="tipo" type="button" id="somar"
+            title="somar" onclick="soma()" value="+"/>
+            
+            <input class="tipo" type="button" id="subtrair"
+            title="subtrair" onclick="subtracao()" value="-"/>
+            
+            <input class="tipo" type="button" id="multiplicar"
+            title="multiplicar" onclick="mult()" value="*"/>
+            
+            <input class="tipo" type="button" id="dividir"
+            title="dividir" onclick="div()" value="/"/>
+            
+            <!--Parte 3 -->
+            <input class="tipo" type="button" id="porcentagem"
+            title="porcentagem" onclick="percent()" value="%"/>
+            
+            <input class="tipo" type="button" id="aquadrado"
+            title="aquadrado" onclick="quadradoA()" value="a²"/>
+            
+            <input class="tipo" type="button" id="bquadrado"
+            title="bquadrado" onclick="quadradoB()" value="b²"/>
+            
+            <input class="tipo" type="button" id="apotenciab"
+            title="apotenciab" onclick="potencia()" value="a^b"/>
+            
+            <!-- Dados de valores -->
+            <input class="tipo" type="text" id="valor1"
+            placeholder="Digite um valor"/>
+            
+            <input class="tipo" type="text" id="valor2"
+            placeholder="Digite um valor"/>
+            
+        </div>
+    </main>
+    <Footer class="rodape"><p class="rodapetexto">CalcTudo</p>
+    
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+              <div class="vw-plugin-top-wrapper"></div>
+            </div>
+          </div>
+          <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+          <script>
+            new window.VLibras.Widget("https://vlibras.gov.br/app");
+          </script>
+    
+    </Footer>
+
+<script src="app.js"></script>
+
+</body>
+</html>

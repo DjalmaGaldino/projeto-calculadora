@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mali:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>Home</title>
+
+    <link rel="stylesheet" href="styles.css" type="text/css">
+
+</head>
+
+<body>
+    <header class="cabecalho" id="cabecalho">
+        <div>
+            <img class="img" src="./imagens/logo.jfif">
+        </div>
+    </header>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="conversoes.html">Conversões</a></li>
+                <li><a href="calculadora.html">Calculadora</a></li>
+            </ul>
+        </nav>
+    <main>
+
+        <div class="tamanho_fonte">
+            <button onclick="diminuir()"> A-</button>
+            <button onclick="aumentar()"> A+ </button>
+        </div>
+        
+        <div class="corpo1" id="corpo1">
+
+            <h1>Cal tudo</h1>
+            <p>Bem vindo ao nosso site</p>
+            
+            <div class="btn">
+             <button class="button" id="button" onclick="cleanmode()" >CleanMode</button>
+
+            <button class="button" id="button" onclick="darkmode()" >DarkMode</button>
+        </div>
+
+        </div>
+        
+        <div class="corpo2" id="corpo2">
+            <div>
+
+              <a href="conversoes.html"> <img class="imagem" src="./imagens/euro.jpg"></a>
+               
+              <!-- <img class="imagem" src="./imagens/euro.jpg"> -->
+            </div>
+            <div>
+                <h1>Conversões</h1>
+                <p>Relize vários tipos de conversões em um só lugar</p>
+            </div>
+        </div>
+        
+        <div class="corpo3" id="corpo3">
+            <div>
+                <h1>Calculadora</h1>
+                <p>Relize vários tipos de cálculos em um só lugar</p>
+            </div>
+            <div>
+
+              <a href="calculadora.html"><img class="imagem" src="./imagens/calculadora.jpeg"></a>
+
+                
+            </div>
+        </div>
+        
+           
+    </main>
+
+    <Footer class="rodape" id="rodape">
+
+        <p class="rodapetexto">CalcTudo</p>
+    
+    
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+              <div class="vw-plugin-top-wrapper"></div>
+            </div>
+          </div>
+          <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+          <script>
+            new window.VLibras.Widget("https://vlibras.gov.br/app");
+          </script>
+    
+    </Footer>
+
+
+    <script src="app.js"></script>
+
+
+
+</body>
+</html>
+
+

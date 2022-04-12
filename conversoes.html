@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Conversões</title>
+
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+
+<body>
+
+    <header class="cabecalho" id="cabecalho">
+      <div>
+        <img class="img" src="./imagens/logo.jfif">
+    </div>
+    </header>
+
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="conversoes.html">Conversões</a></li>
+                <li><a href="calculadora.html">Calculadora</a></li>
+            </ul>
+        </nav>
+
+    <main>
+        <div class="tamanho_fonte">
+            <button onclick="diminuir()"> A-</button>
+            <button onclick="aumentar()"> A+ </button>
+        </div>
+
+        <div class="titulocalc">
+            <h1>CalcTudo</h1>
+            <h2>Conversões</h2>
+      <br>
+
+
+<div class="fieldset">
+    <fieldset>
+        <legend>Real para: </legend>
+            <div>
+                <label for="real">R$</label>
+                <input type="text" id="real">
+            
+                <select id="cambio">
+                    <option>Opções</option>
+                    <option value="euro">EURO</option>
+                    <option value="dolar">DÓLAR</option>
+                    <option value="libra">LIBRA</option>
+                </select>
+                <button onclick="money()" class="bt">Converter</button>
+            </div>
+            
+            <div>              
+                <label for="result">Resultado:</label>
+                <input type="text" id="result">
+            </div>
+
+    </fieldset>
+    <br>
+    
+    <fieldset>
+        <legend>Celsius para: </legend>
+        <div>
+            <label for="graus">°C</label>
+            <input type="text" id="graus">
+        
+            <select id="temperatura">
+                <option>Opções</option>
+                <option value="Fahrenheit">FAHRENHEIT</option>
+                <option value="Kelvin">KELVIN</option>
+            </select>
+        
+            <button class="bt" onclick="tmp()">Converter</button>
+        </div>
+
+        <div>
+            
+            <label for="restemp">Resultado:</label>
+            <input type="text" id="restemp">
+        </div>
+
+    </fieldset>
+
+</div>
+    </div>
+    <br>
+
+    </main>
+
+    <Footer class="rodape">
+
+        <p class="rodapetexto">Calc Tudo</p>
+    
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+              <div class="vw-plugin-top-wrapper"></div>
+            </div>
+          </div>
+          <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+          <script>
+            new window.VLibras.Widget("https://vlibras.gov.br/app");
+          </script>
+
+    </Footer>
+
+<script src="app.js"></script>
+
+</body>
+</html>
